@@ -1,12 +1,10 @@
 # Throttled Function
-ver:    1.0.1
 
 ### About
-author: Stephen Cave
-
-email:  sccave@gmail.com
-
-last:   2014.9.30
+| version | 1.0.1 |
+| author | Stephen Cave |
+| email |  sccave@gmail.com |
+| last | 2014.9.30 |
 
 ### Description
   Use this function as a middleman to add to a normal event triggered 
