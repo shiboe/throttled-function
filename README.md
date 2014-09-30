@@ -3,7 +3,9 @@ ver:    1.0.1
 
 ### About
 author: Stephen Cave
+
 email:  sccave@gmail.com
+
 last:   2014.9.30
 
 ### Description
@@ -16,13 +18,13 @@ last:   2014.9.30
   latest data provided.
 
 ### Example
-  // binding via jQuery with a 1 second buffer delay between calls
-  $('input[name="test"]').on('keyup', throttledFunction( function(e) {
-    var inputValue = this.value;
+    // binding via jQuery with a 1 second buffer delay between calls
+    $('input[name="test"]').on('keyup', throttledFunction( function(e) {
+        var inputValue = this.value;
     
-    // ... do something with value here, like make an ajax request...
+        // ... do something with value here, like make an ajax request...
     
-  }, 1000 ));
+    }, 1000 ));
 
 ### License
 Copyright (c) 2014 [Stephen Cave](sccave@gmail.com) @ [shiboe.com](http://shiboe.com)
