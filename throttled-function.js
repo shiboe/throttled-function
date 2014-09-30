@@ -1,30 +1,4 @@
-
-/*
-  Utility: Throttled Function
-  ***************************
-  author: Stephen Cave
-  email:  sccave@gmail.com
-  last:   2014.9.30
-  ver:    1.0.1
-  
-  Use this function as a middleman to add to a normal event triggered 
-  function a delay buffer that prevents spam calling. The provided function "fn"
-  will be called only so often as defined by "delay" in ms. Each attempt
-  will assure a call is made after the buffer delay. The call will be made with
-  the set of arguments from the last recieved request call. This assures that
-  a request is always made after a request, and the request is always using the
-  latest data provided.
-  
-  example:
-  
-  // binding via jQuery with a 1 second buffer delay between calls
-  $('input[name="test"]').on('keyup', throttledFunction( function(e) {
-    var inputValue = this.value;
-    
-    // ... do something with value here, like make an ajax request...
-    
-  }, 1000 ));
-*/
+// https://github.com/shiboe/throttled-function
 
 var throttledFunction = function( fn, delay ) {
   var lastCall = 0,
