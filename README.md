@@ -1,9 +1,12 @@
 # Throttled Function
-## ver:    1.0.1
-### author: Stephen Cave
-### email:  sccave@gmail.com
-### last:   2014.9.30
+ver:    1.0.1
 
+### About
+author: Stephen Cave
+email:  sccave@gmail.com
+last:   2014.9.30
+
+### Description
   Use this function as a middleman to add to a normal event triggered 
   function a delay buffer that prevents spam calling. The provided function "fn"
   will be called only so often as defined by "delay" in ms. Each attempt
@@ -12,8 +15,7 @@
   a request is always made after a request, and the request is always using the
   latest data provided.
 
-### example:
-  
+### Example
   // binding via jQuery with a 1 second buffer delay between calls
   $('input[name="test"]').on('keyup', throttledFunction( function(e) {
     var inputValue = this.value;
@@ -22,6 +24,7 @@
     
   }, 1000 ));
 
+### License
 Copyright (c) 2014 [Stephen Cave](sccave@gmail.com) @ [shiboe.com](http://shiboe.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
